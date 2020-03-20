@@ -3,17 +3,29 @@ jdk: openjdk8
 script:
   -  ./gradlew clean jar
 
-echo: 'Testing coming soon'
 install: true
-#services:
-#- docker
-#before_install:
-#- docker pull node:8-onbuild
-#install:
-#- docker build -t the-app .
-#script:
-#- docker run --rm the-app npm run test
-#- docker run --rm the-app npm run lint
+
+before_cache:
+  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+
+cache:
+  directories:
+    - $HOME/.gradle/caches/
+    - $HOME/.gradle/wrapper/
+
+echo: 'Testing coming soon'
+
+services:
+  - docker
+before_install:
+  - docker pull node:8-onbuild
+install:
+  - docker build -t the-app .
+
+script:
+- docker run --rm the-app npm run test
+- docker run --rm the-app npm run lint
 
 
 #deploy:
