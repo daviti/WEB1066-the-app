@@ -1,10 +1,10 @@
 language: java
 jdk: openjdk8
-command:
-  ./gradlew clean jar
+script:
+  -  ./gradlew clean jar
 
 echo: 'Testing coming soon'
-
+install: true
 #services:
 #- docker
 #before_install:
