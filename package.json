@@ -34,4 +34,14 @@
 "engines": {
   "node": ">= 8.3.0"
  },
+
+ "scripts": {
+  "dev": "nodemon --exec \"npm start\"",
+  "start": "probot run ./index.js",
+  "lint": "standard --fix",
+  "test": "jest && standard",
+  "coverage": "jest --coverage",
+  "test:watch": "jest --watch --notify --notifyMode=change --coverage"
+},
+
 }
