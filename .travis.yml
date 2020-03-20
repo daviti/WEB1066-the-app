@@ -1,6 +1,6 @@
 language: java
 jdk: oraclejdk8
-install: "pip install -r requirements.txt"
+
 
 echo: 'Testing coming soon'
 
