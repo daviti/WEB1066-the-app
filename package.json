@@ -8,11 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daviti/WEB1066-the-app.git"
+    "url": "https://github.com/daviti/WEB1066-the-app.git"
   },
   "keywords": [
     "the",
-    "app"
+    "app",
+    "the-app"
   ],
   "author": "daviti",
   "license": "ISC",
@@ -42,6 +43,6 @@
   "test": "jest && standard",
   "coverage": "jest --coverage",
   "test:watch": "jest --watch --notify --notifyMode=change --coverage"
-},
+  },
 
 }
