@@ -15,8 +15,8 @@ before_install:
   - docker pull node:8-onbuild
 
 
-install:
-  - docker build -t the-app .
+#install:
+  #- docker build -t the-app .
 
 script:
   - docker run --rm the-app npm run test
