@@ -13,8 +13,8 @@ before_install:
   - docker pull node:8-onbuild
 
 
-#install:
-#  - docker build -t daviti/the-app .
+install:
+  - docker build -t daviti/the-app-gradlew .
 
 #script:
 #- docker run --rm daviti/the-app npm run test
