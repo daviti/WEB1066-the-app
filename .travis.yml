@@ -8,6 +8,7 @@ install: true
   - JAVA_HOME="/documents/Github/WEB1066-the-app"
 
 sudo: required
+
 services:
   - docker
 
