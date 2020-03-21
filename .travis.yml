@@ -14,7 +14,7 @@ before_install:
 
 
 install:
-  - docker build -t daviti/the-app-gradlew .
+  - docker build -t the-app-gradlew .
 
 #script:
 #- docker run --rm daviti/the-app npm run test
