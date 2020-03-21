@@ -31,5 +31,5 @@ before_install:
   # - find vagrant/provision -name "*.yml" -exec ansible-lint -x ANSIBLE008,ANSIBLE0011,ANSIBLE0012,ANSIBLE0013  {} +
 
 
-deploy:
-  provider: docker
+#deploy:
+#  provider: docker
