@@ -15,11 +15,13 @@ ENV PATH=$PATH:/home/node/.npm-global/bin
 
 # Lets install our app into /home/node
 COPY . /home/node/the-app
-RUN chown -R node:node /home/node/the-app-gradlew
+RUN chown -R node:node /home/node/the-app
+
 
 # setup our app
 # non-root user  https://github.com/nodejs/docker-node/blob/e3ec2111af089e31321e76641697e154b3b6a6c3/docs/BestPractices.md#non-root-user
 USER node
 
-WORKDIR /home/node/the-app-gradlew
+WORKDIR /home/node/the-app
+
 RUN npm install
