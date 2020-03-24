@@ -1,8 +1,11 @@
 language: java
-jdk: oraclejdk
-install:
+jdk: oraclejdk8
+script:
   -  ./gradlew clean jar
+  -  echo 'Testing coming soon'
 
+install: true
+  - JAVA_HOME="/documents/Github/WEB1066-the-app"
 
 sudo: required
 services:
