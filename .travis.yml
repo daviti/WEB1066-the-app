@@ -12,8 +12,7 @@ env:
     - COVERAGE=0.318 BUILD_TARGET=./monolithic/repository/user
 
 
-install:
-  - ./gradlew clean jar
+
 
 script:
   # - echo 'testing coming soon'
