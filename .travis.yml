@@ -2,8 +2,7 @@ language: java
 jdk:
   - oraclejdk9
 
-services:
-  - docker
+
 
 env:
     - COVERAGE=0.057 BUILD_TARGET=./monolithic/ui
